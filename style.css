@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-menores: black;
+  --cor-maiores: white;
+  --cor-surpresa: 
+}
+
+body {
+  background-image: 
+  linear-gradient(45deg, rgb(92, 0, 0), rgb(235, 58, 88));
+}
+
+.piano {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.piano-brancas {
+  display: flex;
+  gap: 0.25em;
+  padding: 10px;
+  height: 100px;
+  background-color: var(--cor-menores);
+}
+
+.branca {
+  height: 95px;
+  width: 25px;
+  background-color: var(--cor-maiores);
+  border-radius: 0 0 5px 5px;
+  z-index: 2;
+}
+
+.piano-pretas {
+  position: absolute;
+  display: flex;
+  gap: 0.25em;
+  padding: 10px;
+  height: 100px;
+}
+
+.preta {
+  background-color: var(--cor-menores);
+  width: 25px;
+  height: 50px;
+  border-radius: 0 0 5px 5px;
+  z-index: 3;
+}
+
+.vazia {
+  opacity: 0;
+}
+
+.opcao {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+.troll {
+  background-color: white;
+  position: absolute;
+  margin-top: 550px;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
